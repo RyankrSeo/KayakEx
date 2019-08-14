@@ -19,6 +19,7 @@ import cucumber.api.java.en.When;
 public class SearchFlightSteps extends Commons {
 	SearchPage search;
 	List<WebElement> resultList= new ArrayList<>();	
+	
 	@Given("I Go to Kayak.com")
 	public void i_Go_to_Kayak_com() {
 		search = new SearchPage();

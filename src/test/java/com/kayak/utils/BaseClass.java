@@ -5,21 +5,12 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.remote.DesiredCapabilities;
-
 
 public class BaseClass implements Prop{
 
 	public static WebDriver driver;
 
 	public static void setUpApplication() {
-
-//		ChromeOptions option = new ChromeOptions();
-//		option.addArguments("window-size=720, 480");
-//		
-//		DesiredCapabilities cap = DesiredCapabilities.chrome();
-//		cap.setCapability(ChromeOptions.CAPABILITY, option);
 		
 		if (browser.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
